@@ -6,7 +6,7 @@ node {
     }
 
     stage('Build image') {
-        //# Add dockerhub name as prefix to container
+        // Add dockerhub name as prefix to container
         app = docker.build('brettgpalmer/example-node-app')
     }
 
