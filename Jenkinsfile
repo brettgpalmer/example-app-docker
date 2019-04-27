@@ -2,7 +2,7 @@ node {
     def app
 
     stage('Clone repository') {
-        check scm
+        checkout scm
     }
 
     stage('Build image') {
